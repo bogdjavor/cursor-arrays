@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.Scanner;
 
     public class ArrayHomework {
-        Scanner s = new Scanner(System.in);
+        private Scanner s = new Scanner(System.in);
 
-        ArrayList<String> arrayRep = new ArrayList<>();
-        ArrayList <Integer> numbers = new ArrayList<>();
+        private ArrayList<String> arrayRep = new ArrayList<>();
+        private ArrayList <Integer> numbers = new ArrayList<>();
 
         public ArrayHomework() {
             numbers.add(2);
@@ -33,11 +33,13 @@ import java.util.Scanner;
         }
 
         public void DecsOrder()  {
+            System.out.println("Initial order: " + numbers.toString());
             Collections.sort(numbers, Collections.reverseOrder());
             System.out.println("List after the use of Collection.reverseOrder(): " + numbers);
         }
 
         public void ArrayReplaceOrder() {
+            System.out.println("Initial values: " + arrayRep.toString());
             int index = arrayRep.indexOf("Tree");
             arrayRep.set(index, "Three");
             System.out.println("Changed array element Tree " + arrayRep);
