@@ -1,0 +1,1 @@
+An array must have a fixed size for Virtual machine to create a certain space in memory for that amount of elements because an array is a consecutive set of the same type data.
